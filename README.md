@@ -8,4 +8,8 @@ This project simulates an airfield.
 
 * object oriented programming
 * arrays
+* inheritance
+* polymorphism
+
+add:
 markdown image look up on google
