@@ -16,7 +16,7 @@ public abstract class Jet {
 		
 	}
 	public void fly() {
-		System.out.println( toString() + ", with a flight time of " + (int)(range/speed) + " hours.");
+		System.out.println( toString() + ", with a flight time of " + (int)((range/speed)*60) + " minutes.");
 		
 	}
 	public String getModel() {

@@ -2,7 +2,7 @@ package com.skilldistillery.jets;
 
 public class AirField {
 	private Jet[] jets = new Jet[MAX_JETS];
-	private int numJets = 0;
+//	private int numJets = 0;
 
 	private final static int MAX_JETS = 100;
 
@@ -29,16 +29,9 @@ public class AirField {
 		}
 	}
 
-	public Jet[] getJets() {
-		return this.jets;
-//		Jet[] jetCopy;
-//		jetCopy = new Jet[MAX_JETS];
-//		for (int i = 0; i < MAX_JETS; i++) {
-//			jetCopy[i] = this.jets[i];
-//		}
-//
-//		return jetCopy;
-	}
+//	public Jet[] getJets() {
+//		return this.jets;
+//	}
 
 	public void printJets() {
 		for (Jet jet : jets) {
@@ -87,6 +80,7 @@ public class AirField {
 		System.out.println("The fastest Jet is the " + fastJet.getModel() + ", with a speed of " + fastJet.getSpeed());
 
 	}
+
 	public void printJetWithLongestRange() {
 		Jet longJet = jets[0];
 		for (int i = 1; i < jets.length; i++) {
@@ -97,7 +91,8 @@ public class AirField {
 				}
 			}
 		}
-		System.out.println("The Jet with the longest range is the " + longJet.getModel() + ", with a range of " + longJet.getRange());
+		System.out.println("The Jet with the longest range is the " + longJet.getModel() + ", with a range of "
+				+ longJet.getRange());
 
 	}
 }
