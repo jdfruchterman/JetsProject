@@ -16,14 +16,14 @@ public abstract class Jet {
 		
 	}
 	public void fly() {
-		System.out.println( toString() + ", with a flight time of " + (int)((range/speed)*60) + " minutes.");
+		System.out.println( toString() + ", has taken off, with a flight time of " + (int)((range/speed)*60) + " minutes until it runs out of fuel.");
 		
 	}
 	public String getModel() {
 		return model;
 	}
 	
-	
+	// built this because it was in the UML, but is unused
 	public double getSpeedInMach() {
 		double mach = this.speed/761.21;
 		return mach;

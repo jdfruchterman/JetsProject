@@ -61,7 +61,7 @@ public class JetsApplication {
 	public void addJetToField(AirField airfield) {
 		System.out.println("Please enter the model of aircraft you would like to add to the field: ");
 		String model = scanner.nextLine();
-		System.out.println("Please enter the cruising speed of the aircraft: ");
+		System.out.println("Please enter the cruising speed of the aircraft in MPH: ");
 		double speed = scanner.nextDouble();
 		System.out.println("Please enter the range of the aircraft: ");
 		int range = scanner.nextInt();
