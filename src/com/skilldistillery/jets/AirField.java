@@ -10,7 +10,7 @@ public class AirField {
 		populateJets();
 	}
 	public void populateJets() {
-//model, speed, range, price
+// populates the airfield with jets with parameters model, speed, range, price
 
 		jets[0] = new JetImpl("Boeing 707", 607.0, 3600, 4_300_00);
 		jets[1] = new FighterJet("Lockheed Martin F-22 Raptor", 1220, 1600, 150_000_000);
@@ -25,6 +25,8 @@ public class AirField {
 		jets[10] = new JetImpl("Scaled Composites Model 281 Proteus", 219, 1150, 680_000);
 	}
 
+	// all methods associated with an airfield (most menu options) are kept in airfield class
+	
 	public void addJet(Jet j) {
 		for (int i = 0; i < MAX_JETS; i++) {
 			if (jets[i] == null) {
@@ -33,10 +35,6 @@ public class AirField {
 			}
 		}
 	}
-
-//	public Jet[] getJets() {
-//		return this.jets;
-//	}
 
 	public void printJets() {
 		for (Jet jet : jets) {
@@ -100,4 +98,8 @@ public class AirField {
 				+ longJet.getRange() + " miles.");
 
 	}
+// didn't end up using, but figured out this shorthand works
+//	public Jet[] getJets() {
+//		return this.jets;
+//	}
 }

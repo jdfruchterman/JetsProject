@@ -2,6 +2,10 @@ package com.skilldistillery.jets;
 
 import java.util.Scanner;
 
+
+// this class contains the main, which runs the jetsApp. this instantiates a new airfield, then prints out menu options
+// and uses a switch to select the various options (using methods from airfield) or quit. to keep scanner in just one field,
+// all methods using scanner are in here.
 public class JetsApplication {
 	Scanner scanner = new Scanner(System.in);
 
